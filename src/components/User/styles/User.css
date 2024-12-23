@@ -1,0 +1,193 @@
+.User {
+  width: 100%;
+  min-height: 130vh;
+  background: linear-gradient(180deg, #181850, #12124d, #3d108f, #181850);
+}
+
+.user-profile {
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  height:25vh;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #181850, #12124d, #3d108f, #181850);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.upload-label {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upload-label .icon {
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.user-title {
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.918);
+  font-family: "123";
+  margin-top: 20%;
+  align-self: center;
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+}
+
+.user-icon {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.918);
+  border-radius: 100%;
+ 
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.user-info {
+  position: relative;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-info h1 {
+  font-family:"123";
+}
+
+.user-info strong {
+  font-weight: bold;
+}
+
+.user-footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin: 300px 0;
+}
+
+.footer-section {
+  position: relative;
+  list-style-type: none;
+  color: #181850;
+  width: 80%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.945);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 254, 254, 0.1);
+  display: flex;
+  margin-left: 10%;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.footer-section:hover {
+  background-color: #12124d;
+  color: #fff;
+}
+
+.footer-section:hover span{
+  color: #fff;
+}
+
+.nav-icon{
+  width: 50px;
+}
+
+.footer-section span {
+  font-weight: 600;
+  letter-spacing:2pX;
+  font-family: '123';
+  font-size: 20px;
+  transition: color 0.3s;
+  color: #12124d;
+}
+
+@media only screen and (max-width: 768px) {
+  /* 手機設備 */
+  .user-title {
+    margin-top: 50%;
+    font-size: 30px;
+  }
+
+  .user-icon {
+    width: 150px;
+    height: 150px;
+  }
+
+  .user-info {
+    font-size: 16px;
+  }
+
+  .footer-section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  /* 手機設備 */
+  .user-title {
+    margin-top: 90%;
+    font-size: 20px;
+  }
+
+  .user-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-info {
+    font-size: 15px;
+  }
+
+  .footer-section {
+    margin-top: 20px;
+    width: 80%;
+    
+  }
+  .footer-section span{
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* 平板設備 */
+  .user-title {
+    font-size: 36px;
+  }
+
+  .user-icon {
+    width: 180px;
+    height: 180px;
+  }
+
+  .user-info {
+    font-size: 18px;
+  }
+}

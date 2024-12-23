@@ -1,0 +1,115 @@
+#skills {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #181850, #12124d, #3d108f, #181850);
+  }
+
+  .skill{
+    padding: 0 0 100px 0;
+    position: relative;
+  }
+
+  .skill-bx{
+    
+    box-shadow: 0 0 20px #b8b7b7;
+    animation: glow 4.5s ease-in-out infinite;
+    background: linear-gradient(180deg, #161538, #191430, #1d0b50, #181850);
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    height: 150%;
+    margin: -60px;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px #ffffff;
+    }
+    50% {
+      box-shadow: 0 0 100px #fffefe;
+    }
+    100% {
+      box-shadow: 0 0 20px #c5c2c2;
+    }
+  }
+
+  .skill h2{
+    color: aliceblue;
+font-size: 55px;
+font-weight: 500;
+font-family: '123';
+letter-spacing: 1.8px;
+text-shadow: 0px 0px 9px white;
+  }
+
+  .skill p{
+    color: rgb(215, 221, 221);
+    font-size: 15px;
+  
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1rem;
+  letter-spacing: 4px;
+  color: #c4c3c3;
+  }
+
+  .skill h5{
+    font-size: 18px;
+    color: azure;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+  }
+
+.skill-slider{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill-slider .item img{
+    width: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.number1{
+  position: fixed;
+  margin-left: -30px;
+    margin-top: 20%;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.number2{
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin-left: -30px;
+    margin-top: 20%;
+    color: rgb(255, 255, 255);
+    position: fixed;
+}
+
+.number3{
+  position: fixed;
+  margin-left: -30px;
+    margin-top: 20%;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.number4{
+  position: fixed;
+  margin-left: -30px;
+    margin-top: 20%;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}

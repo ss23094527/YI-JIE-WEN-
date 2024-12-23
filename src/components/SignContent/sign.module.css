@@ -1,0 +1,133 @@
+.sscontainer {
+
+  display: flex;
+  justify-content: center;
+  /* 水平置中 */
+  align-items: center;
+  /* 垂直置中 */
+  height: 100vh;
+  /* 設置容器高度，使其充滿整個視窗 */
+
+  background: linear-gradient(180deg, #171753, #211466, #2b1357, #181850);
+}
+
+.googlebtn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.facebookbtn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.loginbtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  height: 400px;
+  margin: auto;
+  margin-top: 15%;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.loginbtn h1 {
+  font-family: '123';
+  color: #181850;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.loginbtn p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 手機樣式 */
+@media (max-width: 767px) {
+  .sscontainer {
+
+    padding: 10px;
+  }
+
+  .loginbtn {
+    width: 80%;
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginbtn h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .loginbtn p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .googlebtn {
+    width: 70%;
+  }
+
+  .facebookbtn {
+    width: 100%;
+  }
+}
+
+/* 平板樣式 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sscontainer {
+    padding: 40px;
+  }
+
+  .loginbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginbtn h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .loginbtn p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .googlebtn {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .facebookbtn {
+    width: 100%;
+    max-width: 400px;
+  }
+}

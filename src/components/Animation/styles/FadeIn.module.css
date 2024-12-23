@@ -1,0 +1,11 @@
+.fadeIn {
+    opacity: 0;
+    transform: translateY(40px); /* 初始位置为下方 */
+  transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+  }
+  
+  .isVisible {
+    opacity: 1;
+    transform: translateY(0px); /* 向上移动到最终位置 */
+  }
+  

@@ -1,0 +1,176 @@
+/*視差滾動*/
+
+
+
+.animation,
+.animation_layer {
+  height: 100%;
+}
+
+.animation {
+  /* display: block; */
+  position: relative;
+  z-index: 1;
+}
+
+
+/*視差滾動平板*/
+
+@media (max-width: 768px) {
+  
+}
+
+
+
+/*視差滾動手機*/
+@media (max-width:376px) {
+  .animation_layer.parallax {
+    background-size: 150% auto;
+    height: 667px;
+  }
+
+  #textblock-container {
+    margin-top: 0px;
+  }
+
+  #textblock-title {
+    font-size: 15px;
+  }
+
+  #textblock-p {
+    font-size: 8px;
+  }
+
+  #textblock-content {
+    font-size: 10px;
+  }
+
+  #mountain {
+    height: 650px;
+  }
+
+
+  #jungle1 {
+    right: 30px;
+    bottom: 50px;
+  }
+
+  #jungle2 {
+    left: 50px;
+    bottom: 50px;
+
+  }
+
+  #jungle3 {
+    height: 670px;
+  }
+
+  #jungle4 {
+   
+    height: 600px;
+  }
+
+
+}
+
+.animation_layer {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+.animation_layer.parallax {
+  position: relative;
+  
+}
+
+#artback {
+  background-image: url(../../../../images/BG.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#CH {
+  background-image: url(../../../../images/6.png);
+  background-position: center;
+  background-size:contain;
+  animation: floatR 7s ease-in-out infinite;
+  
+}
+
+#logoland {
+  background-image: url(../../../../images/night2.png);
+  background-position: right;
+}
+
+#jungle1 {
+  background-image: url(../../../../images/night3.png);
+  background-position: left;
+  
+  animation: float 8s ease-in-out infinite;
+}
+
+#jungle2 {
+  background-image: url(../../../../images/night4.png);
+  background-position: right;
+  animation: floatR 7s ease-in-out infinite;
+
+
+}
+
+#jungle3 {
+  background-image: url(../../../../images/night5.png);
+  background-position: bottom;
+  animation: floatL 4s ease-in-out infinite;
+}
+
+#jungle4 {
+  background-image: url(../../../../images/night6.png);
+  background-position: left;
+  right: 20%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatR {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatL {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+#jungle5 {
+  background-image: url(../../../../images/night7.png);
+  background-position: center;
+}
+

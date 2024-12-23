@@ -1,0 +1,10 @@
+#shopLayout {
+    display: grid;
+    grid-template-rows: auto 100vh auto;
+    width: 100%;
+    background: linear-gradient(180deg, #1e1e5c, #12124d, #1b152d, #4f3e95, #181850);
+}
+
+#shopBanner {}
+
+#shopItems {}

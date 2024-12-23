@@ -1,0 +1,57 @@
+.musicItem {
+    width: auto;
+    margin: 0px;
+    aspect-ratio: 1 / 1;
+    /* background: #505050; */
+    border-radius: 12px;
+    border: none;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); */
+
+    display: flex;
+}
+
+.musicImg {
+    position: relative;
+    
+    border-radius: 26px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.playBtns {
+    position: relative;
+    top: 90%;
+    left: -10%;
+
+    transform: translate(-100%, -100%);
+
+    padding: auto !important;
+    width: "60px" !important;
+    height: "70px" !important;
+
+    z-index: 999;
+}
+
+.titleBar {
+    width: auto;
+    display: flex;
+    margin-top: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items:start;
+    justify-content: space-between;
+}
+
+
+.favBtns {
+
+    position: relative;
+    top: 128px;
+    right: 11%;
+
+    width: "60px" !important;
+    height: "70px" !important;
+    font-size: 40px;
+
+}

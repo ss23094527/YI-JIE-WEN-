@@ -1,0 +1,82 @@
+.animation_layer {
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 105%;
+  width: 100%;
+}
+
+.aboutback {
+  background-image: url(../../../../images/5432298.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  color: azure;
+  font-family: '123';
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 9px white;
+}
+
+.aboutText{
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: antiquewhite;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 9px white;
+}
+
+.aboutModel{
+  width: auto;
+  height: 300px;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+}
+
+/*視差滾動*/
+
+.animation {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/*視差滾動手機*/
+@media (max-width:376px) {
+  .animation_layer.parallax {
+    background-size: 150% auto;
+    height: 667px;
+  }
+
+  #textblock-container {
+    margin-top: 0px;
+  }
+
+  #textblock-title {
+    font-size: 15px;
+  }
+
+  #textblock-p {
+    font-size: 8px;
+  }
+}
+@media (max-width:768px) {
+  .aboutText{
+    width: 300px;
+    font-size: 1rem;
+  }
+}
+
+ 

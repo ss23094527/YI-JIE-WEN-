@@ -1,0 +1,68 @@
+.formFrame {
+    background: #181638;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: antiquewhite;
+    font-family: '123';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 2em;
+    position: fixed;
+    right: 10%;
+    top: 50%;
+    border-radius: 20px 20px 20px 20px;
+    transform: translate(0%, -50%);
+    width: max-content;
+}
+
+.formFrame form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formFrame label {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.formFrame input,
+.formFrame textarea {
+    background-color: transparent;
+    border: 1px solid antiquewhite;
+    border-radius: 2px;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0.5em;
+    width: 100%;
+}
+
+#formButton {
+
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+    border: none;
+    color: #190f18;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#formButton :hover{
+    background-color: #241421;
+    color: antiquewhite;
+}
+
+@media (max-width:768px) {
+    .formFrame {
+        display: none;
+    }
+}

@@ -1,0 +1,238 @@
+/* 定義全局變數 */
+:root {
+  --primary-color: #1c1c1c;
+  --secondary-color: #6854c2;
+  --font-color: #ffffff;
+  --font-size-small: 14px;
+  --font-size-medium: 20px;
+}
+
+/* Footer元素 */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  font-size: var(--font-size-small);
+  padding: 50px;
+
+  height: 111%;
+  background-image: url(https://img.onl/XJOoeM);
+}
+
+
+
+
+/* 左區塊 */
+.left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* 水平靠左對齊 */
+  top: 15%;
+  left: -20%;
+  /* 左邊距離留出間距 */
+}
+
+.left h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: var(--font-size-medium);
+  text-transform: uppercase;
+}
+
+.left p {
+  margin: 5px 0;
+}
+
+
+.socialicons {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem 1rem;
+}
+
+.socialicons a {
+  margin: 10px 10px;
+  color: var(--font-color);
+  font-size: 24px;
+}
+
+.socialicons a:hover {
+  transition: 0.3s;
+  color: var(--secondary-color);
+}
+
+/* 右區塊 */
+.right {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+  padding-left: 20%;
+  align-items: flex-end;
+  /* 水平靠右對齊 */
+  margin-left: 0;
+  /* 左邊距離自動填滿 */
+}
+
+.right ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20%;
+  display: block;
+  font-size: var(--font-size-small);
+
+  color: var(--font-color);
+}
+
+.right li {
+
+
+  padding-bottom: 10px;
+}
+
+.right h3 {
+  border-bottom: 1px solid var(--font-color);
+  padding-bottom: 20px;
+  font-weight: 800;
+  margin: 10px 0;
+  font-size: var(--font-size-large);
+  text-transform: uppercase;
+}
+
+.right a {
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+
+}
+
+.right a:hover {
+  transition: 0.3s;
+  color: var(--secondary-color);
+}
+
+
+/* 底部 */
+.bottom {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-bottom: 0
+}
+
+.bottom p {
+  margin: 0;
+  font-size: var(--font-size-small);
+}
+
+/* 在螢幕寬度大於768px時將列表排列成橫列 */
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    max-width: 1200px;
+    height: auto;
+  }
+
+  .left {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 50px;
+    align-items: flex-start;
+  }
+
+  .right {
+    width: 70%;
+    margin-right: 20px;
+    align-items: flex-start;
+  }
+
+  .bottom {
+
+  }
+}
+
+
+
+
+/* 在螢幕寬度小於768px時設置樣式 */
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 20px;
+    /* 縮小Footer的內邊距 */
+  }
+
+  .left {
+    align-items: center;
+
+    top: 0%;
+    left: 0%;
+
+    margin-left: 0%;
+    /* 取消左方間距 */
+    text-align: center;
+    /* 水平居中文字 */
+
+  }
+
+  .right ul {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 10%;
+    padding-left: 0%;
+    display: block;
+    font-size: var(--font-size-small);
+    flex-direction: column;
+
+    color: var(--font-color);
+  }
+
+  .right li {
+
+
+    padding-bottom: 10px;
+  }
+
+  .right h3 {
+    border-bottom: 1px solid var(--font-color);
+    padding-bottom: 20px;
+    font-weight: 800;
+    margin: 10px 0;
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+  }
+
+  .right a {
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+  }
+
+  .right {
+    position: relative;
+    align-items: center;
+    /* 右區塊垂直居中 */
+    margin-left: -25%;
+    /* 取消左方間距 */
+  }
+
+
+
+  .right li {
+    margin-bottom: 10px;
+    /* 增加列表間距 */
+  }
+
+  .right h3 {
+    margin: 0;
+    /* 去除上下邊距 */
+    font-size: var(--font-size-small);
+  }
+
+  .bottom {
+    
+  }
+}

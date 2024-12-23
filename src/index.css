@@ -1,0 +1,103 @@
+body {
+  overflow-x:hidden;
+  background-color: rgb(20, 21, 24);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+.hideScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-color {
+  background-color: rgb(36, 36, 41);
+}
+
+html {
+  cursor: url(https://cur.cursors-4u.net/games/gam-10/gam987.ani), url(https://cur.cursors-4u.net/games/gam-10/gam987.png), auto !important;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/*動畫區*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    scale: 1.1;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+/*layout*/
+.layout-footer {
+  /* top: 1000px;
+  z-index: 999;
+  height: 200px;
+  position: relative;
+  background-color: rgb(240, 239, 239); */
+}
+
+.main-layout {
+  /* width: 100%; */
+}
+
+.layout-header {
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; */
+}
+
+.layout-content {
+  /* height: 100%;
+  width: 100%; */
+}
+

@@ -1,0 +1,25 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+  }
+  
+  .loadingSpinner {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    border-top-color: #914dff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
